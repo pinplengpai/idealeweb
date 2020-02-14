@@ -671,9 +671,9 @@ footer.schedule .part:nth-child(2) {
 }
 
 @media (min-width:360px) {
-    :root {
+    /* :root {
         --main-padding: 40px
-    }
+    } */
 }
 
 @media (orientation:portrait) and (min-height:1000px),

@@ -32,28 +32,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.navbar {
+html, body {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#navbar .navbar {
+  max-height: 10%;
   background: white;
-  max-width: 100%;
   padding: 25px; }
-
-.image {
+#navbar .image {
   text-align: center; }
-
-.information {
+#navbar .information {
   position: absolute;
   right: 25px;
   top: 25px;
   margin-right: 9%;
   margin-top: -5px; }
-  .information a {
-    font-size: 1.25rem;
+  #navbar .information a {
+    font-size: 1.5rem;
     text-decoration: none; }
-    .information a:first-child {
+    #navbar .information a:first-child {
       margin-right: 20px; }
-
-.navbar .navbar-brand img {
+#navbar .navbar .navbar-brand img {
   width: 40px; }
+@media (max-width: 960px) {
+  #navbar .information {
+    display: block;
+    margin-left: 15px; } }
+@media (max-width: 720px) {
+  #navbar {
+    /* For a screen < 720px, this CSS will be read */ } }
+@media (max-width: 540px) {
+  #navbar {
+    /* For a screen < 540px, this CSS will be read */ }
+    #navbar .image {
+      width: 30px; }
+    #navbar .information {
+      margin-top: -10px; } }
 
 #footer.footer {
   display: block;
@@ -147,6 +164,13 @@ table {
   margin-top: -50px;
   transform: translate(0%, -99.9943%) matrix3d(0.984811, 0.173631, 0, 0, -0.173631, 0.984811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 
+html, body {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 body {
   background-color: white;
   color: #000;
@@ -156,13 +180,11 @@ body {
   font-variant-numeric: oldstyle-nums;
   font-family: "Lato", sans-serif; }
 
-#main .gapstart {
-  min-height: 100vh; }
 #main .gap {
   height: 100%;
   min-width: 320px; }
 #main .gapstart {
-  height: 100%;
+  min-height: 100vh;
   min-width: 100vw; }
 #main .title {
   text-align: left;
@@ -181,8 +203,11 @@ body {
       color: #fff; }
     #main .title:hover .arrow {
       right: 10%;
+      top: 5%;
       position: absolute;
       display: block; }
+#main a {
+  text-decoration: none; }
 #main .arrow {
   display: none; }
 #main .box {
@@ -202,7 +227,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
   padding: var(--main-padding);
   z-index: -1;
   transform: translateZ(0);
@@ -214,12 +238,12 @@ body {
   z-index: 1; }
 #main .message {
   position: relative;
-  margin-top: 18%;
+  margin-top: 15%;
   margin-bottom: 15%;
   margin-right: auto;
   margin-left: auto;
-  max-width: 960px;
-  max-height: 303px;
+  max-width: 700px;
+  max-height: 310px;
   text-align: left;
   font-style: normal;
   font-size: 1.5rem;
@@ -263,7 +287,53 @@ body {
   margin-top: 28%; }
 @media (orientation: landscape) {
   #main .title {
-    min-width: 110vh;
+    min-width: 120vh;
     height: 100%; } }
+@media (max-width: 960px) {
+  #main .gapstart {
+    min-height: 50vh;
+    padding: 0; }
+  #main .title {
+    margin: 0;
+    width: 100%; }
+  #main .bottom h2 {
+    font-size: 1.25rem; }
+  #main .gap {
+    min-height: 30px; }
+  #main .title {
+    max-width: 100%; }
+  #main .bg {
+    max-width: 100%; }
+  #main .message {
+    left: 0%;
+    padding-left: 36px; } }
+@media (max-width: 720px) {
+  #main .gapstart {
+    min-height: 50vh;
+    padding: 0; }
+  #main .title {
+    margin: 0;
+    width: 100%; }
+  #main .bottom h2 {
+    font-size: 1.25rem; }
+  #main .gap {
+    min-height: 3%; }
+  #main .title {
+    max-width: 100%; }
+  #main .bg {
+    max-width: 100%; } }
+@media (max-width: 540px) {
+  #main .message {
+    margin-top: 29%;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    padding: 28px; }
+  #main .title h1 {
+    font-size: 3.25rem; }
+  #main .title {
+    height: 54vh; }
+  #main .gap {
+    margin-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

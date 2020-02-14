@@ -1,3 +1,10 @@
+html, body, {
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
 body {
     background-color: white;
     color: $black;
@@ -7,18 +14,17 @@ body {
     font-variant-numeric: oldstyle-nums;
     font-family: $font;
 }
-#main{
-    .gapstart {
-        min-height: 100vh
-    }
 
+#main{
+  
     .gap {
         height: 100%;
-        min-width: 320px
+        min-width: 320px;
     }
+
     .gapstart {
-        height: 100%;
-        min-width: 100vw
+        min-height: 100vh;
+        min-width: 100vw;
     }
 
     .title {
@@ -42,10 +48,15 @@ body {
             }
             .arrow {
                 right: 10%;
+                top: 5%;
                 position: absolute;
                 display: block;
             }
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .arrow{
@@ -77,7 +88,6 @@ body {
         top: 0;
         left: 0;
         right: 0;
-        height: 100vh;
         padding: var(--main-padding);
         z-index:-1;
         transform: translateZ(0);
@@ -93,12 +103,12 @@ body {
 
     .message {
         position: relative;
-        margin-top: 18%;
+        margin-top: 15%;
         margin-bottom: 15%;
         margin-right: auto;
         margin-left: auto;
-        max-width: 960px;
-        max-height: 303px;
+        max-width: 700px;
+        max-height: 310px;
         text-align: left;
         font-style: normal;
         font-size:1.5rem;
@@ -161,8 +171,78 @@ body {
 
     @media (orientation:landscape) {
         .title {
-            min-width: 110vh;
+            min-width: 120vh;
             height: 100%
+        }
+    }
+    @media (max-width: 960px) {
+       .gapstart{
+           min-height: 50vh;
+           padding: 0;
+       }
+       .title{
+           margin: 0;
+           width: 100%;
+       }
+       .bottom h2{
+           font-size: 1.25rem;
+       }
+       .gap{
+           min-height: 30px;
+       }
+       .title {
+           max-width: 100%;
+       }
+       .bg{
+           max-width:100%;
+       }
+       .message{
+           left: 0%;
+           padding-left: 36px;
+       }
+      }
+    
+    @media (max-width: 720px) {
+     
+        .gapstart{
+            min-height: 50vh;
+            padding: 0;
+        }
+        .title{
+            margin: 0;
+            width: 100%;
+        }
+        .bottom h2{
+            font-size: 1.25rem;
+        }
+        .gap{
+            min-height: 3%;
+        }
+        .title {
+            max-width: 100%;
+        }
+        .bg{
+            max-width:100%;
+        }
+    }
+    @media (max-width: 540px) {
+       .message{
+            margin-top: 29%;
+            position: relative;
+            display: block;
+            font-size: 1rem;
+            padding: 28px;
+       }
+        .title h1{
+            font-size: 3.25rem;
+        }
+
+        .title{
+            height: 54vh;
+        }
+        
+        .gap{
+            margin-top: 15px;
         }
     }
 }
