@@ -61,9 +61,6 @@ html, body {
   #navbar .information {
     display: block;
     margin-left: 15px; } }
-@media (max-width: 720px) {
-  #navbar {
-    /* For a screen < 720px, this CSS will be read */ } }
 @media (max-width: 540px) {
   #navbar {
     /* For a screen < 540px, this CSS will be read */ }
