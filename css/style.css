@@ -1,0 +1,269 @@
+/* roots */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.navbar {
+  background: white;
+  max-width: 100%;
+  padding: 25px; }
+
+.image {
+  text-align: center; }
+
+.information {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  margin-right: 9%;
+  margin-top: -5px; }
+  .information a {
+    font-size: 1.25rem;
+    text-decoration: none; }
+    .information a:first-child {
+      margin-right: 20px; }
+
+.navbar .navbar-brand img {
+  width: 40px; }
+
+#footer.footer {
+  display: block;
+  width: 100%;
+  background-color: #F8F8F8;
+  color: black;
+  text-align: center; }
+#footer .box-footer {
+  vertical-align: center; }
+  #footer .box-footer .wrapper-footer {
+    padding: 30px; }
+#footer .col {
+  display: inline-block;
+  text-align: center; }
+#footer .address {
+  width: 39%; }
+#footer .call {
+  width: 19%; }
+#footer .email {
+  width: 39%; }
+#footer .lastone {
+  text-align: center;
+  background-color: white; }
+  #footer .lastone .wrapper-lastone {
+    padding: 3px; }
+
+#web .container {
+  background-color: white !important;
+  position: relative; }
+#web .name {
+  position: relative;
+  left: 16.5%; }
+  #web .name h1 {
+    font-size: 3rem; }
+#web .wrap-arrow {
+  width: 40%; }
+  #web .wrap-arrow .wrap-arrow-right {
+    position: absolute;
+    right: 20%;
+    margin-top: 235px; }
+  #web .wrap-arrow .wrap-arrow-left {
+    position: absolute;
+    left: 20%;
+    margin-top: 235px; }
+#web .pics {
+  text-align: center; }
+#web .outside {
+  margin-top: 10px; }
+#web .details {
+  margin-top: 30px;
+  position: relative;
+  left: 16.5%;
+  margin-bottom: 100px;
+  font-style: regular;
+  color: #515B60; }
+  #web .details li {
+    font-size: 1.5rem; }
+#web .elements-1 {
+  position: absolute;
+  left: 30%; }
+  #web .elements-1 .element-1 {
+    margin-top: 44px;
+    margin-left: -302px; }
+#web .elements-2 {
+  position: absolute;
+  margin-top: -66px;
+  right: 18%; }
+  #web .elements-2 .element-2 {
+    margin-top: 40px;
+    position: absolute;
+    right: 0;
+    z-index: 1; }
+#web .yellowspoon-1 {
+  position: absolute;
+  left: 4%;
+  margin-top: -55px; }
+#web .yellowspoon-2 {
+  position: absolute;
+  right: 15;
+  z-index: 1;
+  margin-right: 100px;
+  margin-top: -160px; }
+#web .ido-build-1 {
+  position: absolute;
+  left: 12.25%; }
+#web .ido-build-2 {
+  position: absolute;
+  right: 15;
+  z-index: 1;
+  margin-right: 284px;
+  margin-top: -50px;
+  transform: translate(0%, -99.9943%) matrix3d(0.984811, 0.173631, 0, 0, -0.173631, 0.984811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+
+body {
+  background-color: white;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.3;
+  font-synthesis: none;
+  font-variant-numeric: oldstyle-nums;
+  font-family: "Lato", sans-serif; }
+
+#main .gapstart {
+  min-height: 100vh; }
+#main .gap {
+  height: 100%;
+  min-width: 320px; }
+#main .gapstart {
+  height: 100%;
+  min-width: 100vw; }
+#main .title {
+  text-align: left;
+  font-size: 112px/122px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1; }
+  #main .title:hover {
+    cursor: pointer; }
+    #main .title:hover .text-blue {
+      color: #fff; }
+    #main .title:hover .text-black {
+      color: #fff; }
+    #main .title:hover .text-grey {
+      color: #fff; }
+    #main .title:hover .arrow {
+      right: 10%;
+      position: absolute;
+      display: block; }
+#main .arrow {
+  display: none; }
+#main .box {
+  max-height: 86vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr; }
+#main .s-blue {
+  background-color: #26A9E0; }
+#main .s-black {
+  background-color: #000; }
+#main .s-grey {
+  background-color: #58595B; }
+#main .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  padding: var(--main-padding);
+  z-index: -1;
+  transform: translateZ(0);
+  display: block;
+  width: 100%;
+  height: 100%; }
+#main .main {
+  position: absolute;
+  z-index: 1; }
+#main .message {
+  position: relative;
+  margin-top: 18%;
+  margin-bottom: 15%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  max-height: 303px;
+  text-align: left;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0;
+  color: #000000;
+  line-height: 1.5; }
+  #main .message b {
+    font-family: "Lato", sans-serif;
+    font-weight: 700; }
+  #main .message .highlight-word {
+    cursor: pointer;
+    background-color: #B1D6FF; }
+#main .head {
+  margin-top: 28%;
+  margin-left: 4%; }
+  #main .head h1 {
+    font-size: 5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700; }
+  #main .head .text-blue {
+    color: #26A9E0;
+    -webkit-text-stroke: 1.5px #fff; }
+  #main .head .text-black {
+    color: #000;
+    -webkit-text-stroke: 1.5px #fff; }
+  #main .head .text-grey {
+    color: #58595B;
+    -webkit-text-stroke: 1.5px #fff; }
+#main .application-h1 {
+  margin-left: 4%;
+  margin-top: 33% !important; }
+#main .bottom {
+  margin-left: 4%;
+  margin-top: 21%;
+  line-height: 1.5; }
+  #main .bottom h2 {
+    font-size: 1.5rem; }
+#main .application-h2 {
+  margin-left: 4%;
+  margin-top: 28%; }
+@media (orientation: landscape) {
+  #main .title {
+    min-width: 110vh;
+    height: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

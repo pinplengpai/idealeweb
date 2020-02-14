@@ -1,0 +1,42 @@
+#footer{
+    &.footer{
+        display:block;
+        width: 100%;
+        background-color: #F8F8F8;
+        color: black;
+        text-align:center;
+    }
+
+    .box-footer{
+        vertical-align: center;
+        .wrapper-footer {
+            padding: 30px;
+         }
+    }
+
+    .col{
+        display:inline-block;
+        text-align:center;
+    }
+
+    .address{
+        width: 39%;
+    }
+
+    .call{
+        width: 19%;
+    }
+
+    .email{
+        width:39%;
+     }
+
+    .lastone{
+        text-align:center;
+        background-color:white;
+        .wrapper-lastone{
+            padding: 3px;
+          
+        }
+     }
+}
