@@ -281,7 +281,7 @@ body {
     font-size: 1.5rem; }
 #main .application-h2 {
   margin-left: 4%;
-  margin-top: 28%; }
+  margin-top: 24%; }
 @media (orientation: landscape) {
   #main .title {
     min-width: 120vh;
@@ -312,7 +312,7 @@ body {
     margin: 0;
     width: 100%; }
   #main .bottom h2 {
-    font-size: 1.25rem; }
+    font-size: 1rem; }
   #main .gap {
     min-height: 3%; }
   #main .title {
@@ -321,16 +321,18 @@ body {
     max-width: 100%; } }
 @media (max-width: 540px) {
   #main .message {
-    margin-top: 29%;
+    margin-top: 18%;
     position: relative;
     display: block;
     font-size: 1rem;
     padding: 28px; }
   #main .title h1 {
-    font-size: 3.25rem; }
+    margin-left: 10px;
+    font-size: 3.25rem;
+    margin-top: -29px; }
   #main .title {
     height: 54vh; }
-  #main .gap {
-    margin-top: 15px; } }
+  #main .application-h1 {
+    margin-top: 37% !important; } }
 
 /*# sourceMappingURL=style.css.map */
