@@ -175,9 +175,43 @@ body {
             height: 100%
         }
     }
+
+    @media (max-width: 1024px) {
+        .gapstart{
+            min-height:37vh;
+            padding: 0;
+        }
+        .title{
+            margin: 0;
+            width: 100%;
+            h1 {
+                margin-bottom: -42px;
+                font-size: 7.5rem;
+                margin-top: -71px;
+            }
+        }
+        .bottom h2{
+         margin-top: -30px;
+         font-size: 1.7rem;
+        }
+        .gap{
+            min-height: 0px;
+        }
+        .bg{
+            max-width:100%;
+        }
+        .message{
+            font-size: 1.5rem;
+             left: 0%;
+             padding-top: 12px;
+             padding-left: 11px;
+        }
+    }
+
+  
     @media (max-width: 960px) {
        .gapstart{
-           min-height: 50vh;
+           min-height:40vh;
            padding: 0;
        }
        .title{
@@ -185,10 +219,11 @@ body {
            width: 100%;
        }
        .bottom h2{
-           font-size: 1.25rem;
+        margin-top: -30px;
+        font-size: 1.25rem;
        }
        .gap{
-           min-height: 30px;
+           min-height: 0px;
        }
        .title {
            max-width: 100%;
@@ -197,15 +232,15 @@ body {
            max-width:100%;
        }
        .message{
-           left: 0%;
-           padding-left: 36px;
+            left: 0%;
+            padding-top: 12px;
+            padding-left: 11px;
        }
       }
     
     @media (max-width: 720px) {
-     
+        
         .gapstart{
-            min-height: 50vh;
             padding: 0;
         }
         .title{
@@ -226,8 +261,11 @@ body {
         }
     }
     @media (max-width: 540px) {
+        .gapstart{
+            margin-bottom: -28px;
+        }
        .message{
-            margin-top: 18%;
+            margin-top: 22%;
             position: relative;
             display: block;
             font-size: 1rem;
@@ -236,7 +274,7 @@ body {
         .title h1{
             margin-left: 10px;
             font-size: 3.25rem;
-            margin-top: -29px;
+            margin-top: -5px;
         }
 
         .title{
@@ -247,5 +285,48 @@ body {
             margin-top: 37% !important;
         }
     
+    }
+
+    @media (max-width: 420px) {
+        .message{
+            font-size: 1.14rem;
+        }
+        .gapstart{
+            margin-bottom:14px; 
+        }
+    }
+
+    @media (max-width: 375px) {
+        .message {
+            margin-top: 73px;
+            font-size: 0.96rem;
+        }
+        .gapstart{
+            margin-bottom: -16px;
+        }
+        .title h1 {
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .gapstart{
+            margin-bottom: 12px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .message {
+            font-size: 0.8rem;
+        }
+        .title {
+            max-width: 100vh;
+            h1 {
+                font-size: 2.5rem;
+            }
+        } 
+        .bottom h2{
+            font-size: 0.9rem;
+        }
     }
 }

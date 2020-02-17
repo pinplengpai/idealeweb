@@ -35,7 +35,7 @@ html, body, {
     width: 40px;
   }
   
-  @media (max-width: 960px) {
+  @media (max-width: 1024px) {
     .information{
     display: block;
     margin-left: 15px;
@@ -56,6 +56,16 @@ html, body, {
     }
     .information {
       margin-top: -10px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .information {
+      margin-right: 16px;
+      margin-top: -7px;
+    }
+    .information a{
+      font-size: 1.2rem;
     }
   }
   

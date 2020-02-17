@@ -57,7 +57,7 @@ html, body {
       margin-right: 20px; }
 #navbar .navbar .navbar-brand img {
   width: 40px; }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   #navbar .information {
     display: block;
     margin-left: 15px; } }
@@ -68,6 +68,12 @@ html, body {
       width: 30px; }
     #navbar .information {
       margin-top: -10px; } }
+@media (max-width: 320px) {
+  #navbar .information {
+    margin-right: 16px;
+    margin-top: -7px; }
+  #navbar .information a {
+    font-size: 1.2rem; } }
 
 #footer.footer {
   display: block;
@@ -286,27 +292,51 @@ body {
   #main .title {
     min-width: 120vh;
     height: 100%; } }
+@media (max-width: 1024px) {
+  #main .gapstart {
+    min-height: 37vh;
+    padding: 0; }
+  #main .title {
+    margin: 0;
+    width: 100%; }
+    #main .title h1 {
+      margin-bottom: -42px;
+      font-size: 7.5rem;
+      margin-top: -71px; }
+  #main .bottom h2 {
+    margin-top: -30px;
+    font-size: 1.7rem; }
+  #main .gap {
+    min-height: 0px; }
+  #main .bg {
+    max-width: 100%; }
+  #main .message {
+    font-size: 1.5rem;
+    left: 0%;
+    padding-top: 12px;
+    padding-left: 11px; } }
 @media (max-width: 960px) {
   #main .gapstart {
-    min-height: 50vh;
+    min-height: 40vh;
     padding: 0; }
   #main .title {
     margin: 0;
     width: 100%; }
   #main .bottom h2 {
+    margin-top: -30px;
     font-size: 1.25rem; }
   #main .gap {
-    min-height: 30px; }
+    min-height: 0px; }
   #main .title {
     max-width: 100%; }
   #main .bg {
     max-width: 100%; }
   #main .message {
     left: 0%;
-    padding-left: 36px; } }
+    padding-top: 12px;
+    padding-left: 11px; } }
 @media (max-width: 720px) {
   #main .gapstart {
-    min-height: 50vh;
     padding: 0; }
   #main .title {
     margin: 0;
@@ -320,8 +350,10 @@ body {
   #main .bg {
     max-width: 100%; } }
 @media (max-width: 540px) {
+  #main .gapstart {
+    margin-bottom: -28px; }
   #main .message {
-    margin-top: 18%;
+    margin-top: 22%;
     position: relative;
     display: block;
     font-size: 1rem;
@@ -329,10 +361,35 @@ body {
   #main .title h1 {
     margin-left: 10px;
     font-size: 3.25rem;
-    margin-top: -29px; }
+    margin-top: -5px; }
   #main .title {
     height: 54vh; }
   #main .application-h1 {
     margin-top: 37% !important; } }
+@media (max-width: 420px) {
+  #main .message {
+    font-size: 1.14rem; }
+  #main .gapstart {
+    margin-bottom: 14px; } }
+@media (max-width: 375px) {
+  #main .message {
+    margin-top: 73px;
+    font-size: 0.96rem; }
+  #main .gapstart {
+    margin-bottom: -16px; }
+  #main .title h1 {
+    font-size: 3rem; } }
+@media (max-width: 360px) {
+  #main .gapstart {
+    margin-bottom: 12px; } }
+@media (max-width: 320px) {
+  #main .message {
+    font-size: 0.8rem; }
+  #main .title {
+    max-width: 100vh; }
+    #main .title h1 {
+      font-size: 2.5rem; }
+  #main .bottom h2 {
+    font-size: 0.9rem; } }
 
 /*# sourceMappingURL=style.css.map */
