@@ -301,7 +301,7 @@ body {
     width: 100%; }
     #main .title h1 {
       margin-bottom: -42px;
-      font-size: 7.5rem;
+      font-size: 6.5rem;
       margin-top: -71px; }
   #main .bottom h2 {
     margin-top: -30px;
@@ -342,7 +342,8 @@ body {
     margin: 0;
     width: 100%; }
   #main .bottom h2 {
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin-left: 10px; }
   #main .gap {
     min-height: 3%; }
   #main .title {
@@ -370,18 +371,18 @@ body {
   #main .message {
     font-size: 1.14rem; }
   #main .gapstart {
-    margin-bottom: 14px; } }
+    margin-bottom: 83px; } }
 @media (max-width: 375px) {
   #main .message {
     margin-top: 73px;
     font-size: 0.96rem; }
   #main .gapstart {
-    margin-bottom: -16px; }
+    margin-bottom: 45px; }
   #main .title h1 {
     font-size: 3rem; } }
 @media (max-width: 360px) {
   #main .gapstart {
-    margin-bottom: 12px; } }
+    margin-bottom: 64px; } }
 @media (max-width: 320px) {
   #main .message {
     font-size: 0.8rem; }

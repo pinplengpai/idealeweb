@@ -186,7 +186,7 @@ body {
             width: 100%;
             h1 {
                 margin-bottom: -42px;
-                font-size: 7.5rem;
+                font-size: 6.5rem;
                 margin-top: -71px;
             }
         }
@@ -249,6 +249,7 @@ body {
         }
         .bottom h2{
             font-size: 1rem;
+            margin-left: 10px;
         }
         .gap{
             min-height: 3%;
@@ -292,7 +293,7 @@ body {
             font-size: 1.14rem;
         }
         .gapstart{
-            margin-bottom:14px; 
+            margin-bottom:83px; 
         }
     }
 
@@ -302,7 +303,7 @@ body {
             font-size: 0.96rem;
         }
         .gapstart{
-            margin-bottom: -16px;
+            margin-bottom: 45px;
         }
         .title h1 {
             font-size: 3rem;
@@ -311,7 +312,7 @@ body {
 
     @media (max-width: 360px) {
         .gapstart{
-            margin-bottom: 12px;
+            margin-bottom: 64px;
         }
     }
 
