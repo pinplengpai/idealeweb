@@ -177,18 +177,23 @@ body {
     }
 
     @media (max-width: 1024px) {
+        main{
+            position: relative;
+        }
+        .bg{
+            position: relative;
+        }
         .gapstart{
-            min-height:37vh;
-            padding: 0;
+            min-height: 0;
         }
         .title{
             margin: 0;
             width: 100%;
-            h1 {
-                margin-bottom: -42px;
-                font-size: 6.5rem;
-                margin-top: -71px;
-            }
+        h1 {
+            margin-bottom: -42px;
+            font-size: 6.5rem;
+            margin-top: -71px;
+        }
         }
         .bottom h2{
          margin-top: -30px;
@@ -201,19 +206,17 @@ body {
             max-width:100%;
         }
         .message{
+            margin-top:0;
+            margin-bottom:0;
             font-size: 1.5rem;
-             left: 0%;
-             padding-top: 12px;
-             padding-left: 11px;
+            left: 0%;
+            padding: 24px;
         }
     }
 
   
     @media (max-width: 960px) {
-       .gapstart{
-           min-height:40vh;
-           padding: 0;
-       }
+       
        .title{
            margin: 0;
            width: 100%;
@@ -233,16 +236,12 @@ body {
        }
        .message{
             left: 0%;
-            padding-top: 12px;
-            padding-left: 11px;
+            padding: 24px;
        }
       }
     
     @media (max-width: 720px) {
-        
-        .gapstart{
-            padding: 0;
-        }
+       
         .title{
             margin: 0;
             width: 100%;
@@ -262,11 +261,8 @@ body {
         }
     }
     @media (max-width: 540px) {
-        .gapstart{
-            margin-bottom: -28px;
-        }
+     
        .message{
-            margin-top: 22%;
             position: relative;
             display: block;
             font-size: 1rem;
@@ -292,28 +288,21 @@ body {
         .message{
             font-size: 1.14rem;
         }
-        .gapstart{
-            margin-bottom:83px; 
-        }
+     
     }
 
     @media (max-width: 375px) {
         .message {
-            margin-top: 73px;
             font-size: 0.96rem;
         }
-        .gapstart{
-            margin-bottom: 45px;
-        }
+       
         .title h1 {
             font-size: 3rem;
         }
     }
 
     @media (max-width: 360px) {
-        .gapstart{
-            margin-bottom: 64px;
-        }
+      
     }
 
     @media (max-width: 320px) {
@@ -329,5 +318,78 @@ body {
         .bottom h2{
             font-size: 0.9rem;
         }
+    }
+
+    @media (orientation: landscape) and (max-width: 1024px) {
+        .gapstart{
+            min-height: 100vh;
+        }
+        main {
+            position: absolute;
+        }
+        .bg {
+            position: absolute;
+        }
+        .message {
+            margin-top: 10%;
+        }
+      
+
+    }
+    @media (orientation: landscape) and (max-width: 1024px) {
+        .message{
+            margin-top: 10%;
+            font-size: 1.14rem;
+            padding: 23px;
+            padding-right: 30px;
+        }
+
+        .title h1{
+            font-size:3rem;
+        }
+
+        .bottom h2{
+            font-size: 1.5rem;
+        }
+       
+    }
+
+    @media (orientation: landscape) and (max-width: 760px) {
+        .message{
+            margin-top: 10%;
+            font-size: 1rem;
+            padding: 33px;
+            padding-right: 95px;
+        }
+
+        .title h1{
+            font-size:3rem;
+        }
+
+        .bottom h2{
+            font-size: 1rem;
+        }
+       
+    }
+
+
+    @media (orientation: landscape) and (max-width: 670px) {
+        .message{
+            margin-top: 10%;
+            font-size: 1rem;
+            padding-right: 105px;
+            padding-left:93px;
+        }
+       
+    }
+
+    @media (orientation: landscape) and (max-width: 600px) {
+        .message{
+            margin-top: 10%;
+            font-size: 1rem;
+            padding-right: 66px;
+            padding-left: 40px;
+        }
+       
     }
 }

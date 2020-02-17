@@ -66,14 +66,26 @@ html, body {
     /* For a screen < 540px, this CSS will be read */ }
     #navbar .image {
       width: 30px; }
-    #navbar .information {
-      margin-top: -10px; } }
+    #navbar .information a {
+      margin-top: -10px;
+      font-size: 1.3rem; } }
 @media (max-width: 320px) {
   #navbar .information {
     margin-right: 16px;
     margin-top: -7px; }
   #navbar .information a {
     font-size: 1.2rem; } }
+@media (orientation: landscape) and (max-width: 960px) {
+  #navbar .information a {
+    font-size: 1.2rem; }
+  #navbar .information {
+    margin-right: 39px;
+    margin-top: -5px; } }
+@media (orientation: landscape) and (max-width: 600px) {
+  #navbar .information a {
+    font-size: 1rem; }
+  #navbar .information {
+    margin-right: 39px; } }
 
 #footer.footer {
   display: block;
@@ -293,9 +305,12 @@ body {
     min-width: 120vh;
     height: 100%; } }
 @media (max-width: 1024px) {
+  #main main {
+    position: relative; }
+  #main .bg {
+    position: relative; }
   #main .gapstart {
-    min-height: 37vh;
-    padding: 0; }
+    min-height: 0; }
   #main .title {
     margin: 0;
     width: 100%; }
@@ -311,14 +326,12 @@ body {
   #main .bg {
     max-width: 100%; }
   #main .message {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.5rem;
     left: 0%;
-    padding-top: 12px;
-    padding-left: 11px; } }
+    padding: 24px; } }
 @media (max-width: 960px) {
-  #main .gapstart {
-    min-height: 40vh;
-    padding: 0; }
   #main .title {
     margin: 0;
     width: 100%; }
@@ -333,11 +346,8 @@ body {
     max-width: 100%; }
   #main .message {
     left: 0%;
-    padding-top: 12px;
-    padding-left: 11px; } }
+    padding: 24px; } }
 @media (max-width: 720px) {
-  #main .gapstart {
-    padding: 0; }
   #main .title {
     margin: 0;
     width: 100%; }
@@ -351,10 +361,7 @@ body {
   #main .bg {
     max-width: 100%; } }
 @media (max-width: 540px) {
-  #main .gapstart {
-    margin-bottom: -28px; }
   #main .message {
-    margin-top: 22%;
     position: relative;
     display: block;
     font-size: 1rem;
@@ -369,20 +376,12 @@ body {
     margin-top: 37% !important; } }
 @media (max-width: 420px) {
   #main .message {
-    font-size: 1.14rem; }
-  #main .gapstart {
-    margin-bottom: 83px; } }
+    font-size: 1.14rem; } }
 @media (max-width: 375px) {
   #main .message {
-    margin-top: 73px;
     font-size: 0.96rem; }
-  #main .gapstart {
-    margin-bottom: 45px; }
   #main .title h1 {
     font-size: 3rem; } }
-@media (max-width: 360px) {
-  #main .gapstart {
-    margin-bottom: 64px; } }
 @media (max-width: 320px) {
   #main .message {
     font-size: 0.8rem; }
@@ -392,5 +391,46 @@ body {
       font-size: 2.5rem; }
   #main .bottom h2 {
     font-size: 0.9rem; } }
+@media (orientation: landscape) and (max-width: 1024px) {
+  #main .gapstart {
+    min-height: 100vh; }
+  #main main {
+    position: absolute; }
+  #main .bg {
+    position: absolute; }
+  #main .message {
+    margin-top: 10%; } }
+@media (orientation: landscape) and (max-width: 1024px) {
+  #main .message {
+    margin-top: 10%;
+    font-size: 1.14rem;
+    padding: 23px;
+    padding-right: 30px; }
+  #main .title h1 {
+    font-size: 3rem; }
+  #main .bottom h2 {
+    font-size: 1.5rem; } }
+@media (orientation: landscape) and (max-width: 760px) {
+  #main .message {
+    margin-top: 10%;
+    font-size: 1rem;
+    padding: 33px;
+    padding-right: 95px; }
+  #main .title h1 {
+    font-size: 3rem; }
+  #main .bottom h2 {
+    font-size: 1rem; } }
+@media (orientation: landscape) and (max-width: 670px) {
+  #main .message {
+    margin-top: 10%;
+    font-size: 1rem;
+    padding-right: 105px;
+    padding-left: 93px; } }
+@media (orientation: landscape) and (max-width: 600px) {
+  #main .message {
+    margin-top: 10%;
+    font-size: 1rem;
+    padding-right: 66px;
+    padding-left: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
