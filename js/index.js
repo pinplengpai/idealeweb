@@ -116,3 +116,10 @@ document.addEventListener("DOMContentLoaded", function() {
 }), window.addEventListener("resize", function() {
     init(), setVh()
 }), init(), animate();
+
+var slider_content = document.getElementById('box');
+//contain images in an array
+var image = ['1','2','3','4','5'];
+var i = image.length; 
+
+//funtion for the next slide 

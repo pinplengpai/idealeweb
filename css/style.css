@@ -38,53 +38,54 @@ html, body {
   left: 0;
   right: 0; }
 
-#navbar .navbar {
+#navbar1 .navbar1 {
   max-height: 10%;
   background: white;
   padding: 25px; }
-#navbar .image {
+#navbar1 .image {
   text-align: center; }
-#navbar .information {
+#navbar1 .information {
   position: absolute;
   right: 25px;
   top: 25px;
   margin-right: 9%;
   margin-top: -5px; }
-  #navbar .information a {
+  #navbar1 .information a {
     font-size: 1.5rem;
+    color: black !important;
     text-decoration: none; }
-    #navbar .information a:first-child {
+    #navbar1 .information a:first-child {
       margin-right: 20px; }
-#navbar .navbar .navbar-brand img {
+#navbar1 .navbar1 .navbar-brand img {
   width: 40px; }
 @media (max-width: 1024px) {
-  #navbar .information {
+  #navbar1 .information {
     display: block;
     margin-left: 15px; } }
 @media (max-width: 540px) {
-  #navbar {
+  #navbar1 {
     /* For a screen < 540px, this CSS will be read */ }
-    #navbar .image {
+    #navbar1 .image {
       width: 30px; }
-    #navbar .information a {
+    #navbar1 .information a {
       margin-top: -10px;
       font-size: 1.3rem; } }
 @media (max-width: 320px) {
-  #navbar .information {
+  #navbar1 .information {
     margin-right: 16px;
     margin-top: -7px; }
-  #navbar .information a {
+  #navbar1 .information a {
     font-size: 1.2rem; } }
 @media (orientation: landscape) and (max-width: 960px) {
-  #navbar .information a {
+  #navbar1 .information a {
     font-size: 1.2rem; }
-  #navbar .information {
+  #navbar1 .information {
     margin-right: 39px;
     margin-top: -5px; } }
 @media (orientation: landscape) and (max-width: 600px) {
-  #navbar .information a {
+  #navbar1 .information a {
     font-size: 1rem; }
-  #navbar .information {
+  #navbar1 .information {
     margin-right: 39px; } }
 
 #footer.footer {
@@ -92,7 +93,12 @@ html, body {
   width: 100%;
   background-color: #F8F8F8;
   color: black;
-  text-align: center; }
+  text-align: center;
+  margin-top: 3%; }
+#footer .wrap-call {
+  padding-bottom: 10px; }
+#footer h2 {
+  font-size: 1rem; }
 #footer .box-footer {
   vertical-align: center; }
   #footer .box-footer .wrapper-footer {
@@ -104,6 +110,10 @@ html, body {
   width: 39%; }
 #footer .call {
   width: 19%; }
+  #footer .call h2 {
+    padding-bottom: 14px; }
+  #footer .call p {
+    padding-top: 1px; }
 #footer .email {
   width: 39%; }
 #footer .lastone {
@@ -111,48 +121,62 @@ html, body {
   background-color: white; }
   #footer .lastone .wrapper-lastone {
     padding: 3px; }
+@media (max-width: 720px) {
+  #footer footer {
+    display: block;
+    width: 100%;
+    background-color: #F8F8F8;
+    color: black;
+    text-align: center;
+    margin-top: 3%; }
+  #footer .col {
+    display: block;
+    text-align: center; }
+  #footer .address {
+    width: 100%; }
+  #footer .call {
+    width: 100%; }
+  #footer .email {
+    width: 100%; }
+  #footer .box-footer .wrapper-footer {
+    padding: 10px; } }
 
-#web .container {
-  background-color: white !important;
-  position: relative; }
+#web .box {
+  max-width: 70vw;
+  max-height: 50vh;
+  margin-left: 7%;
+  margin-bottom: 30%;
+  margin-top: 10%; }
 #web .name {
   position: relative;
-  left: 16.5%; }
+  left: 5% 0.5%;
+  margin-bottom: 1%; }
   #web .name h1 {
-    font-size: 3rem; }
-#web .wrap-arrow {
-  width: 40%; }
-  #web .wrap-arrow .wrap-arrow-right {
-    position: absolute;
-    right: 20%;
-    margin-top: 235px; }
-  #web .wrap-arrow .wrap-arrow-left {
-    position: absolute;
-    left: 20%;
-    margin-top: 235px; }
+    font-size: 3.5rem; }
+  #web .name .yellow-text {
+    max-width: 80%; }
 #web .pics {
   text-align: center; }
 #web .outside {
   margin-top: 10px; }
 #web .details {
-  margin-top: 30px;
+  margin-top: 5%;
   position: relative;
-  left: 16.5%;
-  margin-bottom: 100px;
   font-style: regular;
   color: #515B60; }
   #web .details li {
     font-size: 1.5rem; }
 #web .elements-1 {
+  z-index: 1;
   position: absolute;
   left: 30%; }
   #web .elements-1 .element-1 {
     margin-top: 44px;
-    margin-left: -302px; }
+    margin-left: -399px; }
 #web .elements-2 {
   position: absolute;
   margin-top: -66px;
-  right: 18%; }
+  right: 2%; }
   #web .elements-2 .element-2 {
     margin-top: 40px;
     position: absolute;
@@ -160,24 +184,135 @@ html, body {
     z-index: 1; }
 #web .yellowspoon-1 {
   position: absolute;
-  left: 4%;
-  margin-top: -55px; }
+  left: -19%;
+  margin-top: -55px;
+  z-index: 1; }
 #web .yellowspoon-2 {
   position: absolute;
-  right: 15;
+  top: 122%;
+  right: -34%;
   z-index: 1;
   margin-right: 100px;
   margin-top: -160px; }
 #web .ido-build-1 {
   position: absolute;
-  left: 12.25%; }
+  left: -6.75%;
+  z-index: 1; }
 #web .ido-build-2 {
   position: absolute;
-  right: 15;
+  left: 70.7%;
   z-index: 1;
-  margin-right: 284px;
-  margin-top: -50px;
-  transform: translate(0%, -99.9943%) matrix3d(0.984811, 0.173631, 0, 0, -0.173631, 0.984811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  margin-right: 270px;
+  margin-top: -25px; }
+#web .arrow-left {
+  background-image: url("../pictures/arrow slide left.png");
+  background-color: transparent;
+  width: 75px;
+  height: 51px; }
+#web .arrow-right {
+  background-image: url("../pictures/arrow slide right.png");
+  background-color: transparent;
+  width: 75px;
+  height: 51px; }
+@media (max-width: 1240px) {
+  #web .elements-1 .element-1 {
+    margin-top: 21px;
+    margin-left: -275px;
+    max-width: 128px; }
+  #web .box {
+    max-width: 70vw;
+    max-height: 50vh;
+    margin-left: 7%;
+    margin-bottom: 0;
+    margin-top: 10%; }
+  #web .yellowspoon-1 {
+    position: absolute;
+    left: -20%;
+    margin-top: -38px;
+    z-index: 1; }
+  #web .yellowspoon-2 {
+    max-width: 177px;
+    position: absolute;
+    top: 171%;
+    right: -45%;
+    z-index: 1;
+    margin-right: 111px;
+    margin-top: -204px; }
+  #web .ido-build-2 {
+    max-width: 263px;
+    position: absolute;
+    left: 61.7%;
+    z-index: 1;
+    margin-right: 268px;
+    margin-top: -23px; }
+  #web .ido-build-1 {
+    max-width: 33px; }
+  #web .row {
+    margin: 0; } }
+@media (max-width: 960px) {
+  #web .name h1 {
+    font-size: 2.5rem; }
+  #web .details li {
+    font-size: 1.25rem; }
+  #web .elements-1 .element-1 {
+    margin-top: 21px;
+    margin-left: -226px;
+    max-width: 128px; }
+  #web .box {
+    max-width: 70vw;
+    max-height: 50vh;
+    margin-left: 7%;
+    margin-bottom: 0;
+    margin-top: 10%; }
+  #web .yellowspoon-2 {
+    max-width: 177px;
+    position: absolute;
+    top: 171%;
+    right: -56%;
+    z-index: 1;
+    margin-right: 100px;
+    margin-top: -160px; }
+  #web .ido-build-2 {
+    max-width: 195px;
+    position: absolute;
+    left: 61.7%;
+    z-index: 1;
+    margin-right: 268px;
+    margin-top: -17px; }
+  #web .ido-build-1 {
+    max-width: 27px; }
+  #web .row {
+    margin: 0; } }
+@media (max-width: 520px) {
+  #web .row {
+    margin: 0; }
+  #web .name h1 {
+    font-size: 1.5rem; }
+  #web .details li {
+    font-size: 0.65rem; }
+  #web .elements-1 .element-1 {
+    max-width: 0; }
+  #web .elements-2 .element-2 {
+    max-width: 0; }
+  #web .yellowspoon-1 {
+    max-width: 0; }
+  #web .yellowspoon-2 {
+    max-width: 0; }
+  #web .ido-build-1 {
+    max-width: 0; }
+  #web .ido-build-2 {
+    max-width: 0; }
+  #web .arrow-left {
+    background-image: url("../pictures/arrow slide left.png");
+    background-color: transparent;
+    width: 0; }
+  #web .arrow-right {
+    background-image: url("../pictures/arrow slide right.png");
+    background-color: transparent;
+    width: 0; } }
+@media (max-width: 360px) {
+  #web .name h1 {
+    font-size: 1.25rem; } }
 
 html, body {
   position: relative;

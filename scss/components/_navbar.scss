@@ -1,12 +1,12 @@
 html, body, {
   // position:fixed;
-  top:0;
+  top:0 ;
   bottom:0;
   left:0;
   right:0;
 }
-#navbar{
-  .navbar {
+#navbar1{
+  .navbar1 {
     max-height: 10%;
     background: white;
     padding: 25px;
@@ -24,6 +24,7 @@ html, body, {
     margin-top: -5px;
    a {
       font-size: 1.5rem;
+      color: black !important;
       text-decoration: none;
       &:first-child{
         margin-right: 20px;
@@ -31,7 +32,7 @@ html, body, {
     }
   }
   
-  .navbar .navbar-brand img {
+  .navbar1 .navbar-brand img {
     width: 40px;
   }
   

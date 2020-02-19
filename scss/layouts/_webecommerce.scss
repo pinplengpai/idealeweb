@@ -1,0 +1,241 @@
+
+#web{
+    
+    //main of this page
+    .box {
+        max-width: 70vw;
+        max-height: 50vh;
+        margin-left: 7%;
+        margin-bottom: 30%;
+        margin-top:10%;
+    }
+    .name{
+        position:relative;
+        left:5%.5%;
+        margin-bottom: 1%;
+
+        h1{
+            font-size:3.5rem;
+            
+        }
+        .yellow-text{
+            max-width: 80%;
+        }
+    }
+
+    .pics{
+        text-align:center;
+    }
+    .outside{
+        margin-top:10px;
+    }
+
+    .details{
+        margin-top: 5%;
+        position:relative;
+        font-style: regular;
+        color: #515B60;
+        li{
+            font-size:1.5rem;
+        }
+    }
+
+    //element pictures of ROMPBOY
+    .elements-1{
+        z-index:1;
+        position:absolute;
+        left:30%;
+        .element-1{
+            margin-top: 44px;
+            margin-left: -399px;
+        }
+    }
+    .elements-2{
+        position:absolute;
+        margin-top: -66px;
+        right:2%;
+        .element-2 {
+            margin-top:40px;
+            position:absolute;
+            right:0;
+            z-index: 1;
+        }   
+    }
+    //element pictures of Yellow sppon 
+    .yellowspoon-1{
+        position:absolute; 
+        left: -19%;
+        margin-top: -55px;
+        z-index:1 ;
+    }
+    .yellowspoon-2{
+        position:absolute;
+        top: 122%;
+        right: -34%;
+        z-index:1;
+        margin-right: 100px;
+        margin-top: -160px;
+    }
+    //element pictures of yellowspoon
+    .ido-build-1{
+        position: absolute;
+        left: -6.75%;
+        z-index: 1;
+    }
+    
+    .ido-build-2{
+        position: absolute;
+        left: 70.7%;
+        z-index: 1;
+        margin-right: 270px;
+        margin-top: -25px;
+    }
+
+    .arrow-left{
+        background-image: url("../pictures/arrow slide left.png");
+        background-color: transparent;
+        width: 75px;
+        height: 51px;
+    }
+    
+    .arrow-right{
+        background-image: url("../pictures/arrow slide right.png");
+        background-color: transparent;
+        width: 75px;
+        height: 51px;
+    }
+    
+    @media (max-width: 1240px){
+        .elements-1 .element-1 {
+            margin-top: 21px;
+            margin-left: -275px;
+            max-width: 128px;
+        }
+        .box {
+            max-width: 70vw;
+            max-height: 50vh;
+            margin-left: 7%;
+            margin-bottom: 0;
+            margin-top:10%;
+        }
+        .yellowspoon-1{
+            position: absolute;
+            left: -20%;
+            margin-top: -38px;
+            z-index: 1;
+        }
+        .yellowspoon-2{
+            max-width: 177px;
+            position: absolute;
+            top: 171%;
+            right: -45%;
+            z-index: 1;
+            margin-right: 111px;
+            margin-top: -204px;
+        }
+        .ido-build-2{
+            max-width: 263px;
+            position: absolute;
+            left: 61.7%;
+            z-index: 1;
+            margin-right: 268px;
+            margin-top: -23px;
+        }
+        .ido-build-1{
+            max-width: 33px;        }
+        .row{
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 960px) {
+        .name h1{
+            font-size: 2.5rem;
+        }
+        .details li { 
+            font-size: 1.25rem;
+        }
+
+        .elements-1 .element-1 {
+            margin-top: 21px;
+            margin-left: -226px;
+            max-width: 128px;
+        }
+        .box {
+            max-width: 70vw;
+            max-height: 50vh;
+            margin-left: 7%;
+            margin-bottom: 0;
+            margin-top:10%;
+        }
+        .yellowspoon-2{
+            max-width: 177px;
+            position: absolute;
+            top: 171%;
+            right: -56%;
+            z-index: 1;
+            margin-right: 100px;
+            margin-top: -160px;
+        }
+        .ido-build-2{
+            max-width: 195px;
+            position: absolute;
+            left: 61.7%;
+            z-index: 1;
+            margin-right: 268px;
+            margin-top: -17px;
+        }
+        .ido-build-1{
+            max-width: 27px;
+        }
+        .row{
+            margin: 0;
+        }
+    }
+    
+    @media (max-width:520px){
+        .row {
+            margin: 0;
+        }
+        .name h1{
+            font-size: 1.5rem;
+        }
+        .details li{
+            font-size: 0.65rem;
+        }
+        .elements-1 .element-1{
+            max-width: 0;
+        }
+        .elements-2 .element-2{
+            max-width: 0;
+        }
+        .yellowspoon-1 {
+            max-width: 0;
+        }
+        .yellowspoon-2{
+            max-width: 0;
+        }
+        .ido-build-1{
+            max-width: 0;
+        }
+        .ido-build-2{
+            max-width: 0;
+        }
+        .arrow-left{
+            background-image: url("../pictures/arrow slide left.png");
+            background-color: transparent;
+            width: 0;
+        }
+        
+        .arrow-right{
+            background-image: url("../pictures/arrow slide right.png");
+            background-color: transparent;
+            width: 0;
+        }
+    }
+    @media (max-width: 360px){
+        .name h1{
+            font-size: 1.25rem;
+        }
+    }
+}

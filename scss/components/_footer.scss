@@ -5,6 +5,15 @@
         background-color: #F8F8F8;
         color: black;
         text-align:center;
+        margin-top: 3%;
+    }
+
+    .wrap-call {
+        padding-bottom: 10px;
+    }
+
+    h2{
+        font-size: 1rem;
     }
 
     .box-footer{
@@ -25,6 +34,12 @@
 
     .call{
         width: 19%;
+        h2 {
+            padding-bottom:14px;
+        }
+        p {
+            padding-top: 1px;
+        }
     }
 
     .email{
@@ -39,4 +54,34 @@
           
         }
      }
+
+     @media (max-width:720px){
+        footer{
+            display:block;
+            width: 100%;
+            background-color: #F8F8F8;
+            color: black;
+            text-align:center;
+            margin-top: 3%;
+        }
+        .col {
+            display: block;
+            text-align: center;
+        }
+        .address{
+            width: 100%;
+        }
+        .call{
+            width: 100%;
+        }
+        .email{
+            width: 100%;
+        }
+        .box-footer{
+            .wrapper-footer{
+                padding: 10px;;
+            }
+        }
+
+     } 
 }
