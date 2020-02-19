@@ -65,11 +65,13 @@ html, body {
 @media (max-width: 540px) {
   #navbar1 {
     /* For a screen < 540px, this CSS will be read */ }
-    #navbar1 .image {
-      width: 30px; }
-    #navbar1 .information a {
-      margin-top: -10px;
-      font-size: 1.3rem; } }
+    #navbar1 .information {
+      position: relative; }
+    #navbar1 .navbar1 {
+      max-height: 10%;
+      background: white;
+      padding-top: 27px;
+      padding-bottom: 0px; } }
 @media (max-width: 320px) {
   #navbar1 .information {
     margin-right: 16px;

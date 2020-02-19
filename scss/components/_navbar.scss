@@ -41,7 +41,6 @@ html, body, {
     display: block;
     margin-left: 15px;
     }
-    
   }
   
   @media (max-width: 720px) {
@@ -52,12 +51,15 @@ html, body, {
   }
   @media (max-width: 540px) {
     /* For a screen < 540px, this CSS will be read */
-    .image{
-      width: 30px;
+    .information {
+      position: relative;
     }
-    .information a {
-      margin-top: -10px;
-      font-size: 1.3rem;
+
+    .navbar1{
+      max-height: 10%;
+      background: white;
+      padding-top: 27px;
+      padding-bottom: 0px;
     }
   }
 
@@ -85,7 +87,7 @@ html, body, {
     .information a{
       font-size:1rem;
     }
-    .information {
+    .information{
       margin-right: 39px;
     }
   }
