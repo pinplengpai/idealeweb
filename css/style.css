@@ -100,7 +100,7 @@ html, body {
 #footer .wrap-call {
   padding-bottom: 10px; }
 #footer h2 {
-  font-size: 1rem; }
+  font-size: 0.89rem; }
 #footer .box-footer {
   vertical-align: center; }
   #footer .box-footer .wrapper-footer {
@@ -123,6 +123,11 @@ html, body {
   background-color: white; }
   #footer .lastone .wrapper-lastone {
     padding: 3px; }
+@media (max-width: 960px) {
+  #footer .container {
+    padding: 0 !important; }
+  #footer .box-footer .wrapper-footer {
+    padding: 6px; } }
 @media (max-width: 720px) {
   #footer footer {
     display: block;
@@ -138,10 +143,14 @@ html, body {
     width: 100%; }
   #footer .call {
     width: 100%; }
+    #footer .call h2 {
+      padding: 0; }
   #footer .email {
     width: 100%; }
   #footer .box-footer .wrapper-footer {
-    padding: 10px; } }
+    padding: 6px; }
+  #footer .wrap-call1 {
+    padding-top: -20px; } }
 
 #web .box {
   max-width: 70vw;
@@ -236,7 +245,7 @@ html, body {
     max-width: 177px;
     position: absolute;
     top: 158%;
-    right: -132px; }
+    right: -126px; }
   #web .ido-build-2 {
     max-width: 263px;
     position: absolute;

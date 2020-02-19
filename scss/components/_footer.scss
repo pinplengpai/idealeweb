@@ -13,7 +13,7 @@
     }
 
     h2{
-        font-size: 1rem;
+        font-size: 0.89rem;
     }
 
     .box-footer{
@@ -54,6 +54,16 @@
           
         }
      }
+     @media (max-width: 960px){
+        .container {
+            padding:0 !important;
+        }
+        .box-footer{
+            .wrapper-footer{
+                padding: 6px;
+            }
+        }
+     }
 
      @media (max-width:720px){
         footer{
@@ -73,14 +83,20 @@
         }
         .call{
             width: 100%;
+            h2{
+                padding:0;
+            }
         }
         .email{
             width: 100%;
         }
         .box-footer{
             .wrapper-footer{
-                padding: 10px;;
+                padding: 6px;
             }
+        }
+        .wrap-call1{
+            padding-top: -20px;
         }
 
      } 
