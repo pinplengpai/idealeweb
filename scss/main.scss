@@ -188,13 +188,28 @@ body {
         }
         .title{
             margin: 0;
-            width: 100%;
-        h1 {
-            margin-bottom: -42px;
-            font-size: 6.5rem;
-            margin-top: -71px;
+            width: 100%;  
+            &:hover {
+                .text-blue{
+                    color:transparent;
+                }
+                .text-black{
+                    color:transparent;
+                }
+                .text-grey{
+                    color:transparent;
+                }
+                .arrow {
+                    z-index: -2;
+                }
+            }  
+            h1 {
+                margin-bottom: -42px;
+                font-size: 6.5rem;
+                margin-top: -71px;
+            }
         }
-        }
+        
         .bottom h2{
          margin-top: -30px;
          font-size: 1.7rem;
@@ -230,6 +245,7 @@ body {
        }
        .title {
            max-width: 100%;
+
        }
        .bg{
            max-width:100%;

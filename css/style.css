@@ -289,7 +289,7 @@ html, body {
   #web .name h1 {
     font-size: 1.5rem; }
   #web .details li {
-    font-size: 0.65rem; }
+    font-size: 0.89git rem; }
   #web .elements-1 .element-1 {
     max-width: 0; }
   #web .elements-2 .element-2 {
@@ -449,6 +449,14 @@ body {
   #main .title {
     margin: 0;
     width: 100%; }
+    #main .title:hover .text-blue {
+      color: transparent; }
+    #main .title:hover .text-black {
+      color: transparent; }
+    #main .title:hover .text-grey {
+      color: transparent; }
+    #main .title:hover .arrow {
+      z-index: -2; }
     #main .title h1 {
       margin-bottom: -42px;
       font-size: 6.5rem;
